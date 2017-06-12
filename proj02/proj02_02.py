@@ -10,4 +10,8 @@ previous two numbers in the sequence. The sequence looks like this:
 1, 1, 2, 3, 5, 8, 13...
 """
 
+user_input = int(raw_input("Enter a number "))
+input = int(user_input)
+prevnum =
+
 

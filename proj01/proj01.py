@@ -10,17 +10,27 @@
 
 user_input1 = raw_input("What is your name? ")
 name = user_input1
-Cheesecake = name
-Abinav = name + Cheesecake
-if name == Cheesecake or name == Abinav:
-    print "you don't get an age or get to see any movies... nerd"
+if name == "Cheesecake" or name == "Abinav" or name == "Beckey":
+    print "You don't deserve to get a year or watch movies... nerd"
+    user_input2 = raw_input("Do you have anything to say for yourself? ")
+    sorry = user_input2
+    if sorry == "im sorry":
+        print "really? ... Well i guess i can forgive you"
+    if sorry == "i want to die":
+        print "THEN DO IT!"
+        user_input3 = raw_input("... how can you prove it to me? ")
+        prove = user_input3
+        if prove == "by taking the test under a different name":
+            print "ok, i hope you told the truth"
+        if prove == "i dont know":
+            print "then you need to... DIE!!"
+
 else:
-    pass
-    user_input2 = raw_input("What year were you born? ")
-    user_input3 = raw_input("have you had a birthday this year?")
-    years = int(user_input2) + 100
+    user_input4 = raw_input("What year were you born? ")
+    user_input5 = raw_input("have you had a birthday this year? ")
+    years = int(user_input4) + 100
     print "You will be 100 in " + str(years)
-    age = 2017 - int(user_input2)
+    age = 2017 - int(user_input4)
     if age > 17:
         print "and you may view all movie ratings"
     if age == 17:
