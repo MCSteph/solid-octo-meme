@@ -3,7 +3,6 @@
 
 
 # proj06: Hangman
-
 # -----------------------------------
 # Helper code
 # (you don't need to understand this helper code)
@@ -15,7 +14,7 @@ WORDLIST_FILENAME = "words.txt"
 def load_words():
     """
     Returns a list of valid words. Words are strings of lowercase letters.
-    
+
     Depending on the size of the word list, this function may
     take a while to finish.
     """
@@ -26,8 +25,9 @@ def load_words():
     line = inFile.readline()
     # wordlist: list of strings
     wordlist = string.split(line)
-    print "  ", len(wordlist), "words loaded."
+#    print "  ", len(wordlist), "words loaded."
     return wordlist
+
 
 def choose_word(wordlist):
     """
@@ -40,9 +40,48 @@ def choose_word(wordlist):
 # end of helper code
 # -----------------------------------
 
-# actually load the dictionary of words and point to it with 
+# actually load the dictionary of words and point to it with
 # the wordlist variable so that it can be accessed from anywhere
-# in the program
-wordlist = load_words()
 
-# your code begins here!
+wordlist = load_words()
+numguess = 6
+
+
+
+def hangman():
+    word = choose_word(wordlist)
+    length = len(word)
+    print length
+    for length in word:
+        print "_",
+#    print word
+    return word
+
+
+
+
+word2 = hangman()
+guess = str(raw_input("Guess a letter or word "))
+
+
+ans_list = []
+
+for l in word2:
+    ans_list.append(l)
+
+
+
+
+
+if guess == word2:
+    print("Wow I'm impressed")
+
+
+
+
+else:
+    numguess = numguess - 1
+    print ("Sorry, that's incorrect")
+
+
+

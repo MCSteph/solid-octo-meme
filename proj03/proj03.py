@@ -18,30 +18,33 @@ if name == "Chad":
     user_input = int(raw_input("guess a number between 1 and 10 "))
     print "Congradulations! You guessed correctly!"
     pass
-if name == "Abinav" or name == "Beckey" or name == "Cheesecake":
+elif name == "Abinav" or name == "Beckey" or name == "Cheesecake":
     user_input2 = int(raw_input("guess a number between 1 and 10 "))
-    long = user_input2
-    if long == "5256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256005256001234567890":
+    long = int(raw_input("guess a number between 1 and 10 "))
+    if long == "5256005256005256005256005256005256005256005256005256005256005256005256005256005256005256001234567890":
         print "wow... i didnt expect you do guess that... welp i guess you deserve this..."
         print "Congradulations! You guessed correctly!"
-        time.sleep(55)
-else:
-    print "Your wrong, and you dont get anothertry because your a bad person"
+        print "."
+        print "."
+        print "."
+        print "JK U SUCK!!!!!"
+    else:
+        print "Your wrong, and you dont get another try because your a bad person"
     pass
-    else
+else:
     user_input = int(raw_input("guess a number between 1 and 10 "))
     unum = user_input
     if unum == var:
-            print "Congradulations! You guessed correctly!"
-        else:
-            print "sorry, only two more tries "
-            user_input = int(raw_input("guess a number between 1 and 10 "))
-            unum = user_input
-            if unum == var:
+        print "Congradulations! You guessed correctly!"
+    else:
+        print "sorry, only two more tries "
+        user_input = int(raw_input("guess again "))
+        unum = user_input
+        if unum == var:
                 print "Congradulations! You guessed correctly!"
-            else:
+        else:
                 print "sorry, only one more try"
-                user_input = int(raw_input("guess a number between 1 and 10 "))
+                user_input = int(raw_input("guess again "))
                 unum = user_input
                 if unum == var:
                     print "Congradulations! You guessed correctly!"
